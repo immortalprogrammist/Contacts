@@ -10,12 +10,16 @@ struct Person {
     let surname: String
     let email: String
     let phoneNumber: String
+    
+    var fullname: String {
+        "\(name) \(surname)"
+    }
 }
 
 extension Person {
     static func getPersons() -> [Person] {
         var persons: [Person] = []
-        let dataManager = DataManager()
+        let dataManager = DataManager.shared
         
         var names = Set(dataManager.names)
         var surnames = Set(dataManager.surnames)
@@ -23,7 +27,6 @@ extension Person {
         var phoneNumbers = Set(dataManager.phoneNumbers)
         
         for _ in 0..<names.count {
-
             let personName = names.randomElement() ?? ""
             names.remove(personName)
             

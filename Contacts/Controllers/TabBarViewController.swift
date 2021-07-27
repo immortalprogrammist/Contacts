@@ -9,22 +9,18 @@ import UIKit
 
 class TabBarViewController: UITabBarController {
     
-    let person = Person.getPersons()
+    private let persons = Person.getPersons()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        print(person)
+        getPerson(person: persons)
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    private func getPerson(person: [Person]) {
+        guard let personListVC = viewControllers?.first as? PersonListTableViewController else { return }
+        guard let contactsVC = viewControllers?.last as? ContactsTableViewController else { return }
+        
+        personListVC.persons = person
+        contactsVC.persons = person
     }
-    */
-
 }
