@@ -8,11 +8,12 @@
 import UIKit
 
 class TabBarViewController: UITabBarController {
+    
+    let person = Person.getPersons()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        print(person)
     }
     
 
