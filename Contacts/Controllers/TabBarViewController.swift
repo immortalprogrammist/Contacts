@@ -19,7 +19,7 @@ class TabBarViewController: UITabBarController {
     private func getPerson(person: [Person]) {
         guard let personListVC = viewControllers?.first as? PersonListTableViewController else { return }
         guard let contactsVC = viewControllers?.last as? ContactsTableViewController else { return }
-        
+
         personListVC.persons = person
         contactsVC.persons = person
     }

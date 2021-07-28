@@ -17,6 +17,7 @@
 		11530B8C26B0728E003AB926 /* PersonListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11530B8B26B0728E003AB926 /* PersonListTableViewController.swift */; };
 		11530B8E26B07312003AB926 /* ContactsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11530B8D26B07312003AB926 /* ContactsTableViewController.swift */; };
 		11530B9126B074CF003AB926 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11530B9026B074CF003AB926 /* DataManager.swift */; };
+		11530B9326B1BC46003AB926 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11530B9226B1BC46003AB926 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		11530B8B26B0728E003AB926 /* PersonListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonListTableViewController.swift; sourceTree = "<group>"; };
 		11530B8D26B07312003AB926 /* ContactsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsTableViewController.swift; sourceTree = "<group>"; };
 		11530B9026B074CF003AB926 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		11530B9226B1BC46003AB926 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 				11530B8326B070F0003AB926 /* TabBarViewController.swift */,
 				11530B8B26B0728E003AB926 /* PersonListTableViewController.swift */,
 				11530B8D26B07312003AB926 /* ContactsTableViewController.swift */,
+				11530B9226B1BC46003AB926 /* DetailViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -196,6 +199,7 @@
 				11530B6E26B06F98003AB926 /* AppDelegate.swift in Sources */,
 				11530B8A26B07244003AB926 /* Person.swift in Sources */,
 				11530B7026B06F98003AB926 /* SceneDelegate.swift in Sources */,
+				11530B9326B1BC46003AB926 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
